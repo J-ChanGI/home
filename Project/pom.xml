@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.icia</groupId>
-	<artifactId>sample</artifactId>
-	<name>sample</name>
+	<artifactId>project</artifactId>
+	<name>Project</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-<properties>
+	<properties>
 		<java-version>15</java-version>
 		<org.springframework-version>5.2.9.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.8.10</org.aspectj-version>
@@ -220,3 +220,4 @@
 		</plugins>
 	</build>
 </project>
+	
