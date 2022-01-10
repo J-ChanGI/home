@@ -3,6 +3,6 @@
  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="memVo" type="com.icia.project.vo.memVo"/>
+		<typeAlias alias="memvo" type="com.icia.project.vo.memVo"/>
 	</typeAliases>
 </configuration>
