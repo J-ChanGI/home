@@ -2,16 +2,15 @@ package com.icia.project.vo;
 
 public class memVo {
 	
-	private String memno;
+	private String memno; // 회원번호
 	private String memid;
 	private String mempass;
 	private String memname;
-	private int memjoindate;
-	private String checkdel;
-	private String memdpt;
-	private String memrank;
-	private int memcount;
-	
+	private String memjoindate; // 가입일
+//	private String memcheckdel; // 삭제여부
+	private String memdpt; // 부서
+	private String memrank; // 직급
+	private int memcount; // 수정차수 
 	public String getMemno() {
 		return memno;
 	}
@@ -36,18 +35,18 @@ public class memVo {
 	public void setMemname(String memname) {
 		this.memname = memname;
 	}
-	public int getMemjoindate() {
+	public String getMemjoindate() {
 		return memjoindate;
 	}
-	public void setMemjoindate(int memjoindate) {
+	public void setMemjoindate(String memjoindate) {
 		this.memjoindate = memjoindate;
 	}
-	public String getCheckdel() {
-		return checkdel;
-	}
-	public void setCheckdel(String checkdel) {
-		this.checkdel = checkdel;
-	}
+//	public String getMemcheckdel() {
+//		return memcheckdel;
+//	}
+//	public void setMemcheckdel(String memcheckdel) {
+//		this.memcheckdel = memcheckdel;
+//	}
 	public String getMemdpt() {
 		return memdpt;
 	}

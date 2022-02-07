@@ -4,7 +4,8 @@
  
  <mapper namespace="mem"> 
 		<insert id="membership" parameterType="memvo" >
-			INSERT INTO 
+			INSERT INTO pro(MEMNO, MEMID, MEMPASS, MEMNAME, MEMJOINDATE, MEMDPT, MEMRANK, MEMCOUNT)
+			VALUES (SEQ_PRO.NEXTVAL,#{memid},#{mempass},#{memname},#{memjoindate},#{memdpt},#{memrank},#{memcount})
 		
 		</insert>
 	

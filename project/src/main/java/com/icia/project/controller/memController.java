@@ -23,8 +23,13 @@ public class memController {
 	public String member(@ModelAttribute memVo vo ) {
 		ms.member(vo);
 		
-		
 		return "home";
 	}
+	
+	@RequestMapping(value="/loginjoin")
+	public String loginpage() {
+		return "login";
+	}
+	
 	
 }

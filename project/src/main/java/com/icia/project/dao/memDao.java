@@ -15,6 +15,7 @@ public class memDao {
 	public void member(memVo vo) {
 		// TODO Auto-generated method stub
 		sql.insert("mem.membership", vo);
+		System.out.println("dao" + vo);
 	}
 
 }
