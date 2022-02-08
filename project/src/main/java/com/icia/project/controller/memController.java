@@ -43,12 +43,16 @@ public class memController {
 		
 	   if(loginid != null) {
 		   session.setAttribute("login", loginid);
-		   
-	   }else {
-		   
 	   }
-		
-		return "home";
+		return "redirect:/";
 	}
+	
+	@RequestMapping(value="/logout")
+	public String logout() {
+		session.invalidate();
+		
+		return "redirect:/";
+	}
+	
 	
 }
