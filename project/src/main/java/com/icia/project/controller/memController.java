@@ -54,5 +54,9 @@ public class memController {
 		return "redirect:/";
 	}
 	
+	@RequestMapping(value="/mypagejoin")
+	public String mypagejoin() {
+		return "mypage";
+	}
 	
 }
