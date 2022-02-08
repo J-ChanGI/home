@@ -1,5 +1,7 @@
 package com.icia.project.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,6 +15,9 @@ public class memController {
 
 	@Autowired
 	private memService ms;
+	
+	@Autowired
+	private HttpSession session;
 	
 	@RequestMapping(value="/memjoin")
 	public String memjoin() {
@@ -31,5 +36,19 @@ public class memController {
 		return "login";
 	}
 	
+	@RequestMapping(value="/login")
+	public String login(@ModelAttribute memVo vo) {
+		
+	   String loginid = ms.login(vo);
+		
+	   if(loginid != null) {
+		   session.setAttribute("login", loginid);
+		   
+	   }else {
+		   
+	   }
+		
+		return "home";
+	}
 	
 }

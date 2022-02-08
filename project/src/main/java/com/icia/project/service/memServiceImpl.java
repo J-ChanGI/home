@@ -17,5 +17,12 @@ public class memServiceImpl implements memService{
 		// TODO Auto-generated method stub
 		md.member(vo);
 	}
+
+	@Override
+	public String login(memVo vo) {
+		// TODO Auto-generated method stub
+		
+		return md.login(vo);
+	}
 	
 }

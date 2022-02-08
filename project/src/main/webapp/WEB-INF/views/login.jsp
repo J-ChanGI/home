@@ -7,9 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-		
-
+	
+	
+	<form action="login" method="post" >	
+		아이디 : <input type="text" name="memid"><br>
+		비밀번호 : <input type="password" name="mempass"><br>
 	 	
-		
+	 	<input type="submit" value="로그인">
+	</form>	
 </body>
 </html>

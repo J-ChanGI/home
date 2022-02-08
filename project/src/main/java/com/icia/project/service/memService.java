@@ -6,4 +6,6 @@ public interface memService {
 
 	void member(memVo vo);
 
+	String login(memVo vo);
+
 }

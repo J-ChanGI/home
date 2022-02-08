@@ -4,9 +4,13 @@
  
  <mapper namespace="mem"> 
 		<insert id="membership" parameterType="memvo" >
-			INSERT INTO pro(MEMNO, MEMID, MEMPASS, MEMNAME, MEMJOINDATE, MEMDPT, MEMRANK, MEMCOUNT)
+			INSERT INTO pro(MEMNO, MEMID, MEMPASS, MEMNAME ,MEMJOINDATE, MEMDPT, MEMRANK, MEMCOUNT)
 			VALUES (SEQ_PRO.NEXTVAL,#{memid},#{mempass},#{memname},#{memjoindate},#{memdpt},#{memrank},#{memcount})
 		
 		</insert>
-	
+		
+		<select id="login" parameterType="memvo" resultType="String">
+			SELECT MEMID FROM pro WHERE MEMID =#{memid} AND MEMPASS=#{mempass} 		
+			
+		</select>
  </mapper>

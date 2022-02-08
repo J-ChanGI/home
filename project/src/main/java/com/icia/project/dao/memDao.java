@@ -18,4 +18,9 @@ public class memDao {
 		System.out.println("dao" + vo);
 	}
 
+	public String login(memVo vo) {
+		// TODO Auto-generated method stub
+		return sql.selectOne("mem.login", vo);
+	}
+
 }
